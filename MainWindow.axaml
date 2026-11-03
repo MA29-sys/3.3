@@ -4,6 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="katalog.MainWindow"
-        Title="katalog">
-    Welcome to Avalonia!
+        Title="Katalog"
+        Width="900"
+        Height="650">
+    <ContentControl x:Name="MainContent"/>
 </Window>

@@ -1,0 +1,17 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="katalog.ItemDetailsView">
+    <Border Padding="20">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="*" RowSpacing="12">
+            <TextBlock x:Name="TitleText" FontSize="28" FontWeight="Bold" TextWrapping="Wrap"/>
+            <TextBlock Grid.Row="1" x:Name="YearText" FontSize="18"/>
+            <TextBlock Grid.Row="2" x:Name="RatingText" FontSize="18"/>
+            <TextBlock Grid.Row="3" x:Name="DescriptionText" FontSize="16" Text="Szczegóły pozycji" Foreground="Gray"/>
+
+            <StackPanel Grid.Row="4" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Right">
+                <Button Content="Wstecz" Width="110" Click="BackButton_Click"/>
+                <Button Content="Dodaj nowy" Width="140" Click="AddButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>

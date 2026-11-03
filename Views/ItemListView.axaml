@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="katalog.ItemListView">
+    <Border Padding="20">
+        <Grid RowDefinitions="Auto,*">
+            <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,12">
+                <TextBlock Text="Katalog" FontSize="28" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Grid.Column="1" Content="Dodaj" Width="110" Click="AddButton_Click"/>
+            </Grid>
+
+            <ScrollViewer Grid.Row="1">
+                <StackPanel x:Name="ItemListPanel" Spacing="8"/>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="katalog.AddItemView">
+    <Border Padding="20">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" Width="420" RowSpacing="12">
+            <TextBlock Text="Dodaj pozycję" FontSize="28" FontWeight="Bold"/>
+            <TextBox Grid.Row="1" x:Name="TitleTextBox" PlaceholderText="Tytuł"/>
+            <TextBox Grid.Row="2" x:Name="YearTextBox" PlaceholderText="Rok wydania"/>
+            <TextBox Grid.Row="3" x:Name="RatingTextBox" PlaceholderText="Ocena (1-10)"/>
+            <TextBlock Grid.Row="4" x:Name="ErrorText" Foreground="DarkRed" TextWrapping="Wrap"/>
+
+            <StackPanel Grid.Row="5" Orientation="Horizontal" Spacing="12" HorizontalAlignment="Right">
+                <Button Content="Anuluj" Width="110" Click="CancelButton_Click"/>
+                <Button Content="Zapisz" Width="110" Click="SaveButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</UserControl>
